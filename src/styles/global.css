@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "brains";
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "manrope";
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/Manrope-SemiBold.ttf');
+  font-display: swap;
+}
+
+@layer base {
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  html {
+    @apply p-0 m-0 font-manrope text-text bg-gradient-to-r from-black to-background;
+  }
+  html,
+  body {
+    @apply h-full w-screen p-0 m-0;
+  }
+  h1 {
+    @apply text-3xl md:text-5xl;
+  }
+  h2 {
+    @apply text-xl md:text-2xl;
+  }
+  h1,
+  h2,
+  h3,
+  b,
+  a,
+  strong {
+    @apply text-primary drop-shadow-glow;
+  }
+  article {
+    @apply flex flex-col items-start w-fit text-start;
+  }
+  article span {
+    @apply opacity-30;
+  }
+  article p {
+    @apply opacity-75;
+  }
+  main {
+    @apply grid gap-16 max-w-2xl py-20 pt-0 px-4;
+  }
+  main section {
+    @apply flex flex-col gap-4;
+  }
+}
+
+@layer components {
+  .hidden-section {
+    @apply opacity-0 transition-opacity duration-1000 ease-in delay-100;
+  }
+  .show {
+    @apply opacity-100;
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .hidden-section {
+    transition: none;
+  }
+}

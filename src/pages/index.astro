@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Window from '../components/Window.astro';
+import { Icon } from 'astro-icon';
+import { skills, jobs } from '../utils/data.json';
+---
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden-section');
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
+
+<Layout>
+  <div class="h-screen w-full mb-10 flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-black via-trasnparent to-transparent text-center">
+    <div>
+      <h1 class="animate-title text-white drop-shadow-none text-4xl md:text-6xl mb-6 transition-all duration-300 ease-linear">EthanOkamura.dev</h1>
+      <header class="grid w-full text-center items-start mx-auto gap-4 p-6 mb-10 ">
+        <Window width="w-fit font-brains">
+          <div class="grid">
+            <span>Full Stack <b class="drop-shadow-none">Software_Developer</b> () &lcub;</span>
+            <div class="flex ml-6">
+              <span class="text-text max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit"><span class="text-theme-300">dev</span> <b class="drop-shadow-none">Ethan_Okamura</b> = <span class="text-theme-200">"pro"</span>;</span>
+              <div class="animate-blink text-text2">_</div>
+            </div>
+            <span>&rcub;</span>
+          </div>
+        </Window>
+        <p>Experienced Software Developer and Entrepreneur located in the <b>Bay Area</b></p>
+        <p>Identifying <span class="text-theme-100 drop-shadow-redglow">Complex Problems</span> and Engineering <span class="text-theme-200 drop-shadow-greenglow">Efficient Solutions</span></p>
+        <div class="flex gap-4 text-xs text-text2 justify-center">
+          <span>Ethan Okamura</span>
+          |
+          <span>(831)-419-0778</span>
+          |
+          <span>ethanokamura3@gmail.com</span>
+        </div>
+      </header>
+    </div>
+    <div class="flex gap-4 opacity-30 items-center">
+      <div class="w-4 h-4 animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"/></svg></div>
+      <span>Scroll Down to See Content</span>
+      <div class="w-4 h-4 animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"/></svg></div>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <h1>Projects for the Community:</h1>
+      <Window width="w-full">
+        <h2>KōDo:</h2>
+        <span class="text-sm text-text2 text-opacity-50">Online Courses and Remote Lessons (2024)</span>
+        <p>KōDo is an evolution / rework of my previous company, CodeSantaCruz.
+          With KōDo I offer a remote software development teaching service that includes digital ciriculum accessable by current students.
+          This includes both documentation and video lessons.
+          The KōDo website is used when I work with my students so they can follow along and see what is coming next.
+          It allows my students to continue to work on their own and push their creative limits beyond our scheduled lessons.
+          Kōdo was the clear efficient solution to my problems with CodeSantaCruz.
+          Being a fulltime student, dev, and active member in my community, I found myself being pulled in all directions.
+          KōDo allowed me to take on less scheduled lessons and instead instruct my students, assign ciriculum, and check progress in a more efficient mannor.
+          For me, this was a success.
+          This project was not only fun to create, but extremely practical.
+          I was able to include everything I love about <b>web development</b>, <b>game development</b>, working with <b>C++</b> and <b>teaching</b> the promising future leaders in my community.
+        </p>
+        <a target="_blank" href="/" class="text-theme-200 drop-shadow-greenglow">Link To KōDo</a>
+      </Window>
+      <Window width="w-full">
+        <h2>CodeSantaCruz:</h2>
+        <span class="text-sm text-text2 text-opacity-50">In Person And Remote Lessons (2022-2024)</span>
+        <p>
+          CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person.
+          For this project I created a static site using the UI libraries <b>React</b> (a JavaScript framework) and <b>Tailwindcss</b> (a CSS framework). The website was a great stepping stone for a first live webpage and I gained lots of experience with web development.
+          It is here that I also learned the downsides and hassle of over-engineering.
+        </p>
+        <a target="_blank" href="https://codesantacruz.com/" class="text-theme-200 drop-shadow-greenglow">Link To CodeSantaCruz</a>
+      </Window>
+    </section>
+    <section>
+      <h1>Personal Projects:</h1>
+      <Window width="w-full">
+        <h2>Game TITLE</h2>
+        <span class="text-sm text-text2 text-opacity-50">Video Game (2024)</span>
+        <p>
+          Ever since I was a child, I wanted to know how video games worked.
+          Because of this interest at a young age, I taught myself everything I needed to know about game development.
+          After trying out various software like <b>GameSalad</b>, <b>GameMaker Studio</b>, and <b>Unity</b> I decided to stick with Unity.
+          Fast foward a bit and I have now been working with <b>Unity</b> for over 10 years.
+          Being able to express myself creatively has always been extremely important.
+          Now, with years of experience, I am able to make my dreams come true.
+          In the game, TITLE, you play as a small farmer who must defend his crops from incoming enemys.
+          To make the project more complex, I used the <b>Firebase</b> cloud database to hold all the user's data and display a leaderboard for players.
+          Using my knowledge of both video game and web development, I exported my game as a <b>WebGL</b> file and uploaded it onto a custom website.
+          The game is fully functional and free to play.
+          Feel free to try it out for yourself!
+        </p>
+        <p>(say some more bs)</p>
+        <a target="_blank" href="/" class="text-theme-200 drop-shadow-greenglow">Link To Game</a>
+      </Window>
+      <Window width="w-full">
+        <h2>JuiceBox:</h2>
+        <span class="text-sm text-text2 text-opacity-50">Clothing Company (2024)</span>
+        <p>
+          JuiceBox was a creative project I dove into in the start of 2024.
+          I collaborated with my good childhood friend Nick Endres to help with marketing for the brand.
+          I have always enjoyed art and skate culture and have, for many years, drempt of creating my own clothing compnay.
+          With some of the money I had saved from KōDo and past jobs, I reinvested in myself to start JucieBox.
+        </p>
+        <p>(say some more bs)</p>
+        <a target="_blank" href="/" class="text-theme-200 drop-shadow-greenglow">Link To JuiceBox</a>
+      </Window>
+    </section>
+    <section>
+      <h1>Showcasing My Life's Work:</h1>
+      <Window width="w-full">
+        <h2>My Portfolio:</h2>
+        <span class="text-sm text-text2 text-opacity-50">2023</span>
+        <p>
+          Last but not least, I have my portfolio.
+          It is here where I am able to share some of my life's work.
+          The code itself displays my ever evolving productivity and drive for efficiency.
+          I believe I have created a sleek, simplistic, design while showcasing my ability to work with front-end frameworks such as <b>Tailwindcss</b> and <b>Astro</b>.
+        </p>
+      </Window>
+    </section>
+    <section>
+      <h1>Skills:</h1>
+      <div class="flex flex-wrap justify-start gap-4">
+        {skills.map((skill: any) =>
+          <div class="hidden-section drop-shadow-black flex gap-2 items-center p-2 rounded-lg bg-gradient-to-br from-accent to-background border-4 border-accent">
+            <div class="w-8">
+              <Icon name={skill.icon}/>
+            </div>
+            <h2 class="pr-2">{skill.title}</h2>
+          </div>
+        )}
+      </div>
+    </section>
+    <section>
+      <h1>Education:</h1>
+      <div class="flex justify-center flex-wrap gap-4">
+        <Window width="w-64">
+          <h2>Cabrillo College:</h2>
+          <i class="text-text2 text-sm">2021-2024</i>
+          <p>Transfered With Honors For Computer Science</p>
+        </Window>
+        <Window width="w-64">      
+          <h2>UC Santa Cruz:</h2>
+          <i class="text-text2 text-sm">Current</i>
+          <p>BS in Computer Science</p>
+        </Window>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col">
+        <h1 class="w-fit p-4 flex border-b-4 border-primary ">Job Experience:</h1>
+        <div class="h-8 border-l-4 border-primary drop-shadow-glow"></div>
+        {jobs.map((job: any, index: number) =>
+          <>
+            { index != jobs.length - 1 ?
+              <div class="flex gap-4 items-start border-l-4 border-primary">
+                <i class="w-16 border-r-4 border-y-4 border-primary drop-shadow-glow text-primary rounded-r-lg p-2"><Icon name={job.icon}/></i>
+                <article class="hidden-section">
+                  <h2>{job.title}</h2>
+                  <span>{job.position} ({job.date})</span>
+                  <p>{job.desc}</p>
+                </article>
+              </div>
+              <div class="h-8 border-l-4 border-primary"></div>
+            :
+              <div class="flex gap-4 items-start">
+                <i class="w-16 border-4 border-primary drop-shadow-glow text-primary rounded-r-lg rounded-bl-lg p-2"><Icon name={job.icon}/></i>
+                <article class="hidden-section">
+                  <h2>{job.title}</h2>
+                  <span>{job.position} ({job.date})</span>
+                  <p>{job.desc}</p>
+                </article>
+              </div>
+            }
+          </>
+        )}
+      </div>
+    </section>
+  </main>
+</Layout>

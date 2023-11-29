@@ -1,0 +1,124 @@
+{
+  "skills":
+  [
+    {
+      "title": "C++",
+      "icon": "vscode-icons:file-type-cpp3"
+    },
+    {
+      "title": "C#",
+      "icon": "vscode-icons:file-type-csharp2"
+    },
+    {
+      "title": "Unity",
+      "icon": "mdi:unity"
+    },
+    {
+      "title": "Photoshop",
+      "icon": "vscode-icons:file-type-photoshop"
+    },
+    {
+      "title": "JavaScript",
+      "icon": "vscode-icons:file-type-js"
+    },
+    {
+      "title": "TypeScript",
+      "icon": "vscode-icons:file-type-typescript-official"
+    },
+    {
+      "title": "Astro",
+      "icon": "vscode-icons:file-type-astro"
+    },
+    {
+      "title": "SvelteKit",
+      "icon": "vscode-icons:file-type-svelte"
+    },
+    {
+      "title": "CSS",
+      "icon": "vscode-icons:file-type-css"
+    },
+    {
+      "title": "Tailwindcss",
+      "description": "description",
+      "icon": "vscode-icons:file-type-tailwind"
+    },
+    {
+      "title": "HTML",
+      "icon": "vscode-icons:file-type-html"
+    },
+    {
+      "title": "Firebase",
+      "icon": "vscode-icons:file-type-firebase"
+    },
+    {
+      "title": "Git",
+      "icon": "vscode-icons:file-type-git"
+    }
+    
+  ],
+  "jobs": [
+    {
+      "title": "KōDo",
+      "icon": "ph:code-bold",
+      "position": "Teacher and Founder",
+      "date": "Current",
+      "desc": "Offered an efficient remote software development teaching service that includes digital ciriculum accessable by current students. The site held both documentation and video lessons. Gained Experience in full-stack web development, working with digital media, and handling content heavy pages all while solidifying my knowledge on computer science topics."
+    },
+    {
+      "title": "JuiceBox",
+      "icon": "tabler:shirt",
+      "position": "Creator and Designer",
+      "date": "Current",
+      "desc": "Produced consistent, high-quality clothing. Gained experience with product marketing, full-stack web development for the website, and a hands on production process."
+    },
+    {
+      "title": "CodeSantaCruz",
+      "icon": "ph:code-bold",
+      "position": "Teacher and Founder",
+      "date": "2022-2024",
+      "desc": "Offered both a remote and in-person software development teaching service. Gained experience in working with others, managing a schedule, and static web development all while solidifying my knowledge on computer science topics."
+    },
+    {
+      "title": "The Coder School",
+      "icon": "ph:code-bold",
+      "position": "Teacher",
+      "date": "2022",
+      "desc": "Worked with over 50 students teaching an array of different languages and concepts ranging from game developmentl, general computer science topics, and web design. Gained experience managing a group of people and working on a team to create efficient, easily understood, in depth ciriculum."
+    },
+    {
+      "title": "New Leaf Community Market",
+      "icon": "ic:outline-local-grocery-store",
+      "position": "Sales Associate",
+      "date": "2021",
+      "desc": "Worked on a team to deliver the best possible experience for our patrons. Gained experience working with coworkers and patrons."
+    },
+    {
+      "title": "Back Nine Bar and Grill",
+      "icon": "mdi:food-outline",
+      "position": "Server",
+      "date": "2021",
+      "desc": "Delivered a professional dining experience to local patrons. Gained experience working overtime and managing both time and stress in a fast paced environment."
+    },
+    {
+      "title": "Woodstocks Pizza",
+      "icon": "uil:food",
+      "position": "Delivery Driver / Kitchen Assistance",
+      "date": "2020",
+      "desc": "Worked on a team of people to produce and deliver quality food to the patrons. I gained experience working in a kitchen, working on a team and working face to face with our customer base."
+    },
+    {
+      "title": "Cinelux Theaters",
+      "icon": "tabler:movie",
+      "position": "Floor Staff",
+      "date": "2017-2020",
+      "desc": "Worked with a team of people to create a professional, organized, and ____ environment for our patrons. This was my first time gaining experience working with others and developing my customer-service skill set."
+    },
+    {
+      "title": "Lucky Bee Press",
+      "icon": "clarity:design-line",
+      "position": "Associate",
+      "date": "2013-2020",
+      "desc": "Assisted in stocking inventory, monitoring quality control, and gained experience working for a small business. This was my first look at owning and managing your own business, which proved to be extremely beneficial."
+    }
+  ]
+}

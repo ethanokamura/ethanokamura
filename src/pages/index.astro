@@ -9,6 +9,8 @@ import { skills, jobs } from '../utils/data.json';
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
         }
       });
     });
@@ -53,7 +55,7 @@ import { skills, jobs } from '../utils/data.json';
     <main>
       <section>
         <h1>Projects for the Community:</h1>
-        <Window width="w-full">
+        <Window width="hidden-section w-full">
           <h2>KōDo:</h2>
           <span class="text-sm text-text2 text-opacity-50">Online Courses and Remote Lessons (2024)</span>
           <p>KōDo is an evolution / rework of my previous company, CodeSantaCruz.
@@ -70,7 +72,7 @@ import { skills, jobs } from '../utils/data.json';
           </p>
           <a target="_blank" href="/" class="text-theme-200 drop-shadow-greenglow">Link To KōDo</a>
         </Window>
-        <Window width="w-full">
+        <Window width="hidden-section w-full">
           <h2>CodeSantaCruz:</h2>
           <span class="text-sm text-text2 text-opacity-50">In Person And Remote Lessons (2022-2024)</span>
           <p>
@@ -83,7 +85,7 @@ import { skills, jobs } from '../utils/data.json';
       </section>
       <section>
         <h1>Personal Projects:</h1>
-        <Window width="w-full">
+        <Window width="hidden-section w-full">
           <h2>Game TITLE</h2>
           <span class="text-sm text-text2 text-opacity-50">Video Game (2024)</span>
           <p>
@@ -102,7 +104,7 @@ import { skills, jobs } from '../utils/data.json';
           <p>(say some more bs)</p>
           <a target="_blank" href="/" class="text-theme-200 drop-shadow-greenglow">Link To Game</a>
         </Window>
-        <Window width="w-full">
+        <Window width="hidden-section w-full">
           <h2>JuiceBox:</h2>
           <span class="text-sm text-text2 text-opacity-50">Clothing Company (2024)</span>
           <p>
@@ -117,7 +119,7 @@ import { skills, jobs } from '../utils/data.json';
       </section>
       <section>
         <h1>Showcasing My Life's Work:</h1>
-        <Window width="w-full">
+        <Window width="hidden-section w-full">
           <h2>My Portfolio:</h2>
           <span class="text-sm text-text2 text-opacity-50">2023</span>
           <p>
@@ -144,12 +146,12 @@ import { skills, jobs } from '../utils/data.json';
       <section>
         <h1>Education:</h1>
         <div class="flex justify-center flex-wrap gap-4">
-          <Window width="w-64">
+          <Window width="hidden-section w-64">
             <h2>Cabrillo College:</h2>
             <i class="text-text2 text-sm">2021-2024</i>
             <p>Transfered With Honors For Computer Science</p>
           </Window>
-          <Window width="w-64">      
+          <Window width="hidden-section w-64">      
             <h2>UC Santa Cruz:</h2>
             <i class="text-text2 text-sm">Current</i>
             <p>BS in Computer Science</p>

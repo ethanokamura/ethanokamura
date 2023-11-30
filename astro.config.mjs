@@ -4,9 +4,9 @@ import { loadEnv } from "vite";
 const { BUILD_TYPE } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
 
 export default defineConfig({
-  site: BUILD_TYPE == 'production' ? 'https://paperwrld.github.io' : 'http://localhost:4321',
+  site: BUILD_TYPE == 'https://paperwrld.github.io',
   // base: 'ethanokamura/',
-  base: BUILD_TYPE == 'production' ? 'ethanokamura/' : 'dist/',
+  base: BUILD_TYPE == 'ethanokamura/',
   output: 'static',
   integrations: [tailwind()],
 });

@@ -3,6 +3,13 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://paperwrld.github.io',
-  integrations: [tailwind()]
+  // site: 'https://paperwrld.github.io',
+  // base: '/',
+  output: 'static',
+  integrations: [tailwind()],
+  vite: {
+    ssr: {
+      noExternal: ['tailwind'],
+    }
+  }
 });

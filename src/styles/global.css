@@ -1,28 +1,15 @@
+@import '@fontsource/manrope';
+@import '@fontsource/jetbrains-mono';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "brains";
-  font-style: normal;
-  font-weight: 300;
-  src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
-  font-display: swap;
-}
-@font-face {
-  font-family: "manrope";
-  font-style: normal;
-  font-weight: 300;
-  src: url('/fonts/Manrope-SemiBold.ttf');
-  font-display: swap;
-}
 
 @layer base {
   html::-webkit-scrollbar {
     display: none;
   }
   html {
-    @apply p-0 m-0 font-manrope text-text bg-gradient-to-r from-black to-background;
+    @apply p-0 m-0 text-text bg-gradient-to-r from-black to-background;
   }
   html,
   body {
@@ -61,7 +48,7 @@
 
 @layer components {
   .hidden-section {
-    @apply opacity-0 transition-opacity duration-1000 ease-in delay-100;
+    @apply opacity-0 transition-opacity duration-500 ease-in delay-100;
   }
   .show {
     @apply opacity-100;

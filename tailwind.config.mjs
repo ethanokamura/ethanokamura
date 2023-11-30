@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: ['./src/**/*.{astro,html}'],
   mode: 'jit',
 	theme: {
 		extend: {
@@ -33,9 +34,8 @@ export default {
         ]
       },
       fontFamily: {
-        brains: 'brains',
-        manrope: 'manrope',
-        rubik: 'rubik',
+        brains: 'jetbrains-mono',
+        manrope: ['manrope', defaultTheme.fontFamily.manrope],
       },
       animation: {
         title: "title 1.5s infinite",

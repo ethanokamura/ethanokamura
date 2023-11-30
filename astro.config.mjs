@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://paperwrld.github.io',
-  base: '/ethanokamura',
+  base: 'ethanokamura/',
   // output: 'static',
   integrations: [tailwind()],
   vite: {

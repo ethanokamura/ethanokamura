@@ -56,7 +56,7 @@ import { projects, skills, jobs } from '../utils/data.json';
       <section>
         <h1>My Projects:</h1>
         {projects.map((project: any) => 
-          {if (project.tag != "portfolio") {
+          {if (project.tag != "Porfolio") {
             return (
               <Window width="hidden-section w-full">
                 <h2>{project.title}</h2>
@@ -71,7 +71,7 @@ import { projects, skills, jobs } from '../utils/data.json';
       <section>
         <h1>Showcasing My Life's Work:</h1>
         {projects.map((project: any) => 
-          {if (project.tag == "portfolio") {
+          {if (project.tag == "Porfolio") {
             return (
               <Window width="hidden-section w-full">
                 <h2>{project.title}</h2>

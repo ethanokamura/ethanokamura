@@ -24,22 +24,6 @@
       "tag": "Website"
     },
     {
-      "title": "Game",
-      "date": "2024",
-      "description": "Video Game",
-      "content": "Ever since I was a child, I wanted to know how video games worked. Because of this interest at a young age, I taught myself everything I needed to know about game development. After trying out various software like GameSalad, GameMaker Studio, and Unity, I decided to stick with Unity. Fast-forward a bit, and I have now been working with Unity for over 10 years. Being able to express myself creatively has always been extremely important. Now, with years of experience, I am able to make my dreams come true. In the game, TITLE, you play as a small farmer who must defend his crops from incoming enemies. To make the project more complex, I used the Firebase cloud database to hold all the user's data and display a leaderboard for players. Using my knowledge of both video game and web development, I exported my game as a WebGL file and uploaded it onto a custom website. The game is fully functional and free to play. Feel free to try it out for yourself!",
-      "link": "/",
-      "tag": "Game"
-    },
-    {
-      "title": "JuiceBox",
-      "date": "2024",
-      "description": "Clothing Company",
-      "content": "JuiceBox was a creative project I dove into in the start of 2024. I collaborated with my good childhood friend Nick Endres to help with marketing for the brand. I have always enjoyed art and skate culture and have, for many years, dreamt of creating my own clothing company. With some of the money I had saved from CodeSantaCruzV2 and past jobs, I reinvested in myself to start JucieBox.",
-      "link": "/",
-      "tag": "Website"
-    },
-    {
       "title": "Portfolio",
       "date": "2024",
       "description": "",

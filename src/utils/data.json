@@ -22,13 +22,6 @@
       "content": "CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person. For this project, I created a static site using the UI libraries React (a JavaScript framework) and Tailwindcss (a CSS framework). The website was a great stepping stone for a first live webpage and I gained lots of experience with web development. It is here that I also learned the downsides and hassle of over-engineering.",
       "link": "https://codesantacruz.com/",
       "tag": "Website"
-    },
-    {
-      "title": "Portfolio",
-      "date": "2024",
-      "description": "",
-      "content": "Last, but not least, I have my portfolio. It is here where I am able to share some of my life's work. The code itself displays my ever evolving productivity and drive for efficiency. I believe I have created a sleek, simplistic, design while showcasing my ability to work with front-end frameworks such as Tailwindcss and Astro.",
-      "tag": "Porfolio"
     }
   ],
   "skills":
@@ -93,8 +86,11 @@
     {
       "title": "Bash",
       "icon": "codicon:terminal-bash"
+    },
+    {
+      "title": "Flutter",
+      "icon": "vscode-icons:file-type-flutter"
     }
-    
   ],
   "jobs": [
     {

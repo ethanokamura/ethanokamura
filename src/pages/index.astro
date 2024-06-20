@@ -19,98 +19,74 @@ import { projects, skills, jobs } from '../utils/data.json';
   hiddenElements.forEach((el) => observer.observe(el));
 </script>
 <Layout>
-  <div class="flex flex-col items-center w-screen bg-gradient-to-r from-transparent to-background">
-    <div class="h-screen w-full mb-10 flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-black via-trasnparent to-transparent text-center">
-      <div>
-        <h1 class="animate-title text-white drop-shadow-none text-4xl md:text-6xl mb-6 transition-all duration-300 ease-linear">EthanOkamura.dev</h1>
-        <header class="grid w-full text-center items-start mx-auto gap-4 p-6 mb-10 ">
-          <Window width="w-fit font-brains">
-            <div class="grid">
-              <span>Full Stack <b class="drop-shadow-none">Software_Developer</b> () &lcub;</span>
-              <div class="flex ml-6">
-                <span class="text-text max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit"><span class="text-theme-300">dev</span> <b class="drop-shadow-none">Ethan_Okamura</b> = <span class="text-theme-200">"pro"</span>;</span>
-                <div class="animate-blink text-text2">_</div>
-              </div>
-              <span>&rcub;</span>
-            </div>
-          </Window>
-          <p>Experienced Software Developer and Entrepreneur located in the <b>Bay Area</b></p>
-          <p>Identifying <span class="text-theme-100 drop-shadow-redglow">Complex Problems</span> and Engineering <span class="text-theme-200 drop-shadow-greenglow">Efficient Solutions</span></p>
-          <div class="flex gap-4 text-xs text-text2 justify-center">
+  <div class="flex flex-col items-center w-screen">
+    <div class="h-screen w-full mb-10 flex flex-col gap-8 justify-center items-center text-center">
+      <Window>
+        <h1 class="text-6xl text-text text-center drop-shadow-none">
+          Ethan Okamura
+        </h1>
+        <h2 class="text-3xl text-primary text-center">SOFTWARE DEVELOPER</h2>
+        <div class="grid w-full text-center items-start mx-auto gap-4 p-6">
+          <div class="flex gap-4 text-xs text-text3 justify-center">
             <span>Ethan Okamura</span>
             |
             <span>(831)-419-0778</span>
             |
             <span>ethanokamura3@gmail.com</span>
           </div>
-        </header>
-      </div>
+        </div>
+      </Window>
+      <p class="text-2xl font-bold text-text">Engineering <b class="text-green-300 drop-shadow-greenglow">Efficient Solutions</b> For <b class="text-red-400 drop-shadow-redglow">Complex Problems</b></p>
       <div class="flex gap-4 opacity-30 items-center">
         <div class="w-4 h-4 animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"/></svg></div>
         <span>Scroll Down to See Content</span>
         <div class="w-4 h-4 animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"/></svg></div>
       </div>
     </div>
-  
+
     <main>
-      <section>
-        <h1>My Projects:</h1>
-        {projects.map((project: any) => 
-          {if (project.tag != "Porfolio") {
-            return (
-              <Window width="hidden-section w-full">
-                <h2>{project.title}</h2>
-                <span class="text-sm text-text2 text-opacity-50">{project.description} ({project.date})</span>
-                <p>{project.content}</p>
-                { project.link ? <a target="_blank" href={project.link} class="text-theme-200 drop-shadow-greenglow">Link To My { project.tag }</a> : <></>}
-              </Window>
-            );
-          }}
-        )}
-      </section>
-      <section>
-        <h1>Showcasing My Life's Work:</h1>
-        {projects.map((project: any) => 
-          {if (project.tag == "Porfolio") {
-            return (
-              <Window width="hidden-section w-full">
-                <h2>{project.title}</h2>
-                <span class="text-sm text-text2 text-opacity-50">{project.description} ({project.date})</span>
-                <p>{project.content}</p>
-                { project.link ? <a target="_blank" href={project.link} class="text-theme-200 drop-shadow-greenglow">Link To My { project.tag }</a> : <></>}
-              </Window>
-            );
-          }}
-        )}
-      </section>
       <section>
         <h1>Skills:</h1>
         <div class="flex flex-wrap justify-start gap-4">
           {skills.map((skill: any) =>
-            <div class="hidden-section drop-shadow-black flex gap-2 items-center p-2 rounded-lg bg-gradient-to-br from-accent to-background border-4 border-accent">
+            <div class="hidden-section drop-shadow-black flex gap-2 items-center p-2 rounded-lg bg-gradient-to-br from-secondary to-background border-4 border-secondary">
               <div class="w-8">
                 <Icon name={skill.icon}/>
               </div>
-              <h2 class="pr-2">{skill.title}</h2>
+              <p class="pr-2 text-2xl font-bold">{skill.title}</p>
             </div>
           )}
         </div>
       </section>
+
       <section>
         <h1>Education:</h1>
         <div class="flex justify-center flex-wrap gap-4">
           <Window width="hidden-section w-64">
             <h2>Cabrillo College:</h2>
-            <i class="text-text2 text-sm">2021-2024</i>
+            <span>2021-2024</span>
             <p>Transfered With Honors For Computer Science</p>
           </Window>
-          <Window width="hidden-section w-64">      
+          <Window width="hidden-section w-64">
             <h2>UC Santa Cruz:</h2>
-            <i class="text-text2 text-sm">Current</i>
+            <span>2024-2026</span>
             <p>BS in Computer Science</p>
           </Window>
         </div>
       </section>
+
+      <section>
+        <h1>My Projects:</h1>
+        {projects.map((project: any) =>
+          <Window width="hidden-section w-full">
+            <h2 class="text-text drop-shadow-none">{project.title}</h2>
+            <span>{project.description} ({project.date})</span>
+            <p>{project.content}</p>
+            { project.link ? <a target="_blank" href={project.link} class="text-primary underline">Link</a> : <></>}
+          </Window>
+        )}
+      </section>
+
       <section>
         <div class="flex flex-col">
           <h1 class="w-fit p-4 flex border-b-4 border-primary ">Job Experience:</h1>
@@ -121,7 +97,7 @@ import { projects, skills, jobs } from '../utils/data.json';
                 <div class="flex gap-4 items-start border-l-4 border-primary">
                   <i class="w-16 border-r-4 border-y-4 border-primary drop-shadow-glow text-primary rounded-r-lg p-2"><Icon name={job.icon}/></i>
                   <article class="hidden-section">
-                    <h2>{job.title}</h2>
+                    <h2 class="text-primary drop-shadow-glow">{job.title}</h2>
                     <span>{job.position} ({job.date})</span>
                     <p>{job.desc}</p>
                   </article>
@@ -131,7 +107,7 @@ import { projects, skills, jobs } from '../utils/data.json';
                 <div class="flex gap-4 items-start">
                   <i class="w-16 border-4 border-primary drop-shadow-glow text-primary rounded-r-lg rounded-bl-lg p-2"><Icon name={job.icon}/></i>
                   <article class="hidden-section">
-                    <h2>{job.title}</h2>
+                    <h2 class="text-primary drop-shadow-glow">{job.title}</h2>
                     <span>{job.position} ({job.date})</span>
                     <p>{job.desc}</p>
                   </article>

@@ -6,14 +6,21 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "jetbrains-mono";
+  font-family: "brains";
   font-weight: 300;
   src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
 }
 @font-face {
-  font-family: "manrope";
+  font-family: "rubik";
   font-weight: 300;
-  src: url('/fonts/Manrope-SemiBold.ttf');
+  src: url('/fonts/Rubik-Regular.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik";
+  font-weight: 800;
+  src: url('/fonts/Rubik-Bold.ttf');
+  font-display: swap;
 }
 
 @layer base {
@@ -21,7 +28,7 @@
     display: none;
   }
   html {
-    @apply p-0 m-0 text-text bg-black;
+    @apply p-0 m-0 text-text bg-background font-rubik text-lg;
   }
   html,
   body {
@@ -39,16 +46,19 @@
   b,
   a,
   strong {
+    @apply font-bold;
+  }
+  h1, b {
     @apply text-primary drop-shadow-glow;
+  }
+  p {
+    @apply text-text2 text-lg
+  }
+  span {
+    @apply text-text3 text-sm;
   }
   article {
     @apply flex flex-col items-start w-fit text-start;
-  }
-  article span {
-    @apply opacity-30;
-  }
-  article p {
-    @apply opacity-75;
   }
   main {
     @apply grid gap-16 max-w-2xl py-20 pt-0 px-4;

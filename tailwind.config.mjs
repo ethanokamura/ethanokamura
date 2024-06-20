@@ -1,27 +1,33 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
-const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: ['./src/**/*.{astro,html}'],
   mode: 'jit',
 	theme: {
 		extend: {
       colors: {
-        'text': '#c5d5e3',
-        'text2': '#707a82',
-        'background': '#13151a',
-        'accent': '#1f232e',
-        'primary': '#54b6f7',
-        'secondary': '#191c24',
+        'text': '#ffffff',
+        'text2': '#e1e5ed',
+        'text3': '#838b9c',
+        'background': '#1D2025',
+        'accent': '#3b414d',
+        'primary': '#61AFEF',
+        'secondary': '#282C34',
         theme: {
           300: '#ac83fc',
           200: '#71de9e',
           100: '#de7571'
-        }
+        },
+        green: {
+          100:  '#98C379',
+        },
+        red: {
+          100: '#E06C75',
+        },
       },
       dropShadow: {
         black: [
-          "0px 0px 15px #000000"
+          "0px 0px 10px #0b0d0f"
         ],
         glow: [
           "0px 0px 7px #2f80b5"
@@ -34,8 +40,8 @@ export default {
         ]
       },
       fontFamily: {
-        brains: 'jetbrains-mono',
-        manrope: ['manrope', defaultTheme.fontFamily.manrope],
+        brains: 'brains',
+        rubik: 'rubik',
       },
       animation: {
         title: "title 1.5s infinite",
@@ -61,7 +67,7 @@ export default {
           },
           to: {
             width: "100%"
-          }  
+          }
         },
         blink: {
           "50%": {
@@ -69,7 +75,7 @@ export default {
           },
           "100%": {
             opacity: "100%"
-          }  
+          }
         }
       }
     },

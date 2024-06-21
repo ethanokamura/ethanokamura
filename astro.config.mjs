@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://paperwrld.github.io',
-  base: '/', // 'ethanokamura/',
+  base: 'ethanokamura/', // 'ethanokamura/',
   output: 'static',
   integrations: [tailwind()],
 });

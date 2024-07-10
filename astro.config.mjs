@@ -4,8 +4,8 @@ import tailwind from "@astrojs/tailwind";
 // const { BUILD_TYPE } = loadEnv(process.env.NODE_ENV, process.cwd(), "");
 
 export default defineConfig({
-  site: 'https://paperwrld.github.io',
-  base: 'ethanokamura/', // 'ethanokamura/',
+  site: 'ethanokamura.io',
+  base: '/', // 'ethanokamura/',
   output: 'static',
   integrations: [tailwind()],
 });

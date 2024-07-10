@@ -8,11 +8,11 @@
       "tag": "community"
     },
     {
-      "title": "CodeSantaCruz Rework",
+      "title": "PerfectLine (CodeSantaCruz Rework)",
       "date": "2024",
       "description": "Online Courses and Remote Lessons",
       "content": "I decided after having more experience under my belt, that it was time to improve CodeSantaCruz as a whole. The new version is a necessary evolution / rework of my previous website and way of teaching with CodeSantaCruz. With the rework, I offer a remote software development teaching service that includes digital curriculum accessible by current students. This includes both documentation and video lessons. The new website is used when I work with my students so they can follow along and see what is coming next. It allows my students to continue to work on their own and push their creative limits beyond our scheduled lessons. Rebuilding CodeSantaCruz allowed for a signifigantly more effective solution to my problems with CodeSantaCruz. Being a full-time student, dev, and active member in my community, I found myself being pulled in all directions. This now allowed me to take on less scheduled lessons and instead instruct my students, assign curriculum, and check progress in a more efficient manner. For me, this was a success. This project was not only fun to create, but extremely practical. I was able to include everything I love about web development, game development, working with C++ and teaching the promising future leaders in my community. With more experience in choosing frontend frameworks, I chose to use Astro this time around. It is blazingly fast at serving static content in high quanity. Not only this, but reworking the website allowed me to present a much more modern, frictionless frontend design using Tailwindcss.",
-      "link": "https://codesantacruz.com/",
+      "link": "https://perfectline.io/",
       "tag": "Website"
     },
     {
@@ -20,7 +20,7 @@
       "date": "2022",
       "description": "In Person And Remote Lessons",
       "content": "CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person. For this project, I created a static site using the UI libraries React (a JavaScript framework) and Tailwindcss (a CSS framework). The website was a great stepping stone for a first live webpage and I gained lots of experience with web development. It is here that I also learned the downsides and hassle of over-engineering.",
-      "link": "https://codesantacruz.com/",
+      "link": "https://perfectline.io/",
       "tag": "Website"
     }
   ],
@@ -94,7 +94,7 @@
   ],
   "jobs": [
     {
-      "title": "CodeSantaCruz V2",
+      "title": "PerfectLine",
       "icon": "ph:code-bold",
       "position": "Teacher and Founder",
       "date": "Current",

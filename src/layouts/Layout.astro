@@ -1,17 +1,10 @@
 ---
+import Head from '../components/Head.astro';
 import '/src/styles/global.css';
 ---
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Ethan Okamura</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta charset="UTF-8" />
-    <meta property="type" content="article" />
-    <meta property="title" content="Ethan Okamura" />
-    <meta name="description" content="Portfoli Site for Ethan Okamura" />
-    <meta name="viewport" content="width=device-width" />
-  </head>
+  <Head title='Ethan Okamura' description='A portfolio site'/>
 	<body class="flex flex-col justify-between">
     <div class="flex flex-col items-center w-screen">
       <slot/>

@@ -68,11 +68,14 @@ const props = Astro.props
 
       <section>
         <h1>About Me:</h1>
+        <Window width="hidden-section w-full">
+        <h2>Ethan Okamura</h2>
         <p>I am a full-time computer science student at the University of California, Santa Cruz, with a decade of programming experience and a strong background in teaching. My goal is to inspire a love for programming in the local youth, helping them bring their dream projects to life in a fun and engaging way. I started working at 12 and haven't stopped since.</p>
         <br/>
         <p>Outside of work and school, I enjoy drawing, hiking, working out, and spending time with friends and family. I take pride in my determination to innovate, create, design, and continuously learn. I'm driven to get the job done right, and if I don't succeed at first, I always grow from the experience.</p>
         <br/>
         <p>Exciting projects are in the works, and I'll be happy to share them soon! Feel free to connect with me through the provided links above.</p>
+        </Window>
       </section>
 
       <section>
@@ -109,7 +112,7 @@ const props = Astro.props
         <h1>My Projects:</h1>
         {projects.map((project: any) =>
           <Window width="hidden-section w-full">
-            <h2 class="text-text drop-shadow-none">{project.title}</h2>
+            <h2>{project.title}</h2>
             <span>{project.description} ({project.date})</span>
             { project.link ? <a target="_blank" href={project.link} class="text-primary underline">Link</a> : <></>}
             {project.content.map((paragraph: any) =>

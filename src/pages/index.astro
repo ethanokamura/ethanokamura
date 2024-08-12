@@ -68,13 +68,11 @@ const props = Astro.props
 
       <section>
         <h1>About Me:</h1>
-        <div class="flex justify-center flex-wrap gap-4">
-          <Window width="hidden-section w-full">
-            <h2>Ethan Okamura:</h2>
-            <p>My name is Ethan Okamura. I am a Santa Cruz local and full-time student at the University of California, Santa Cruz. Currently, I am completing my degree in computer science with the end goal of obtaining a master’s degree alongside practical experience in software engineering. As the creator of Perfect Line, I aim to be a mentor and teacher, providing affordable resources for people of all backgrounds. With a decade of programming expertise and a background in teaching, my goal is to instill a love for programming in anyone who wants to take these courses while they have fun creating their dream projects. I am committed to the continuous journey of learning and higher education and strive to offer my students comprehensive knowledge and support. </p>
-            <br/>
-            <p>I have more projects in the works that I will be happy to announce soon! Feel free to contact me and connect.</p>
-          </Window>
+        <p>I am a full-time computer science student at the University of California, Santa Cruz, with a decade of programming experience and a strong background in teaching. My goal is to inspire a love for programming in the local youth, helping them bring their dream projects to life in a fun and engaging way. I started working at 12 and haven't stopped since.</p>
+        <br/>
+        <p>Outside of work and school, I enjoy drawing, hiking, working out, and spending time with friends and family. I take pride in my determination to innovate, create, design, and continuously learn. I'm driven to get the job done right, and if I don't succeed at first, I always grow from the experience.</p>
+        <br/>
+        <p>Exciting projects are in the works, and I'll be happy to share them soon! Feel free to connect with me through the provided links above.</p>
       </section>
 
       <section>
@@ -85,7 +83,7 @@ const props = Astro.props
               <div class="w-8">
                 <Icon name={skill.icon}/>
               </div>
-              <p class="pr-2 text-2xl font-bold text-text">{skill.title}</p>
+              <p class="pr-2 text-xl font-bold text-text">{skill.title}</p>
             </div>
           )}
         </div>
@@ -113,8 +111,11 @@ const props = Astro.props
           <Window width="hidden-section w-full">
             <h2 class="text-text drop-shadow-none">{project.title}</h2>
             <span>{project.description} ({project.date})</span>
-            <p>{project.content}</p>
             { project.link ? <a target="_blank" href={project.link} class="text-primary underline">Link</a> : <></>}
+            {project.content.map((paragraph: any) =>
+              <p>{paragraph}</p>
+              <br/>
+            )}
           </Window>
         )}
       </section>

@@ -1,27 +1,128 @@
 {
   "projects" : [
     {
-      "title": "CodeSantaCruz Linux Server",
+      "title": "PerfectLine Linux Server",
       "date": "2024",
       "description": "Online Courses and Remote Lessons",
-      "content": "To further assist my teaching environment, I created a linux shell server to allow studnets to create, write, and excetute their own files via an online server. This allowed them to put all the files we created in the lessons in one central place. These files were accessable 24/7 and allowed me to grade and edit files with ease. This exponentially increased my efficency and ability to create a cleaner, more efficient learning environment for both my students and myself This gave me experience working with servers, linux, bash scripting, IT best practices, and cyber security.",
-      "tag": "community"
+      "content": [
+        "To further assist my teaching environment, I created a linux shell server to allow studnets to create, write, and excetute their own files via an online server. This allowed them to put all the files we created in the lessons in one central place."
+      ],
+      "tag": "community",
+      "skills": [
+        {
+          "title": "Linux",
+          "icon": "flat-color-icons:linux"
+        },
+        {
+          "title": "Bash",
+          "icon": "codicon:terminal-bash"
+        },
+        {
+          "title": "C++",
+          "icon": "vscode-icons:file-type-cpp3"
+        }
+      ]
     },
+
     {
       "title": "PerfectLine (CodeSantaCruz Rework)",
       "date": "2024",
       "description": "Online Courses and Remote Lessons",
-      "content": "I decided after having more experience under my belt, that it was time to improve CodeSantaCruz as a whole. The new version is a necessary evolution / rework of my previous website and way of teaching with CodeSantaCruz. With the rework, I offer a remote software development teaching service that includes digital curriculum accessible by current students. This includes both documentation and video lessons. The new website is used when I work with my students so they can follow along and see what is coming next. It allows my students to continue to work on their own and push their creative limits beyond our scheduled lessons. Rebuilding CodeSantaCruz allowed for a signifigantly more effective solution to my problems with CodeSantaCruz. Being a full-time student, dev, and active member in my community, I found myself being pulled in all directions. This now allowed me to take on less scheduled lessons and instead instruct my students, assign curriculum, and check progress in a more efficient manner. For me, this was a success. This project was not only fun to create, but extremely practical. I was able to include everything I love about web development, game development, working with C++ and teaching the promising future leaders in my community. With more experience in choosing frontend frameworks, I chose to use Astro this time around. It is blazingly fast at serving static content in high quanity. Not only this, but reworking the website allowed me to present a much more modern, frictionless frontend design using Tailwindcss.",
+      "content": [
+        "After gaining more experience, I decided it was time to evolve CodeSantaCruz. The new version reworks both my previous website and teaching methods, offering remote software development instruction with a digital curriculum, including documentation and video lessons. The updated site helps students follow along during lessons and continue their work independently, pushing their creative limits.",
+        "Rebuilding CodeSantaCruz has streamlined my teaching, allowing me to manage my time more effectively as a full-time student, developer, and community member. This project was both practical and enjoyable, incorporating everything I love about web and game development, C++, and teaching. I chose Astro for its speed in serving static content and TailwindCSS for a modern frontend design."
+      ],
       "link": "https://perfectline.io/",
-      "tag": "Website"
+      "tag": "Website",
+      "skills": [
+        {
+          "title": "Astro",
+          "icon": "vscode-icons:file-type-astro"
+        },
+        {
+          "title": "Tailwindcss",
+          "icon": "vscode-icons:file-type-tailwind"
+        },
+        {
+          "title": "JavaScript",
+          "icon": "vscode-icons:file-type-js"
+        },
+        {
+          "title": "TypeScript",
+          "icon": "vscode-icons:file-type-typescript-official"
+        },
+        {
+          "title": "CSS",
+          "icon": "vscode-icons:file-type-css"
+        },
+        {
+          "title": "HTML",
+          "icon": "vscode-icons:file-type-html"
+        },
+        {
+          "title": "Git",
+          "icon": "vscode-icons:file-type-git"
+        }
+      ]
     },
     {
       "title": "CodeSantaCruz",
       "date": "2022",
       "description": "In Person And Remote Lessons",
-      "content": "CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person. For this project, I created a static site using the UI libraries React (a JavaScript framework) and Tailwindcss (a CSS framework). The website was a great stepping stone for a first live webpage and I gained lots of experience with web development. It is here that I also learned the downsides and hassle of over-engineering.",
+      "content": [
+        "CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person. The website was a great stepping stone for a first live webpage and I gained lots of experience with web development. It is here that I also learned the downsides and hassle of over-engineering."
+      ],
       "link": "https://perfectline.io/",
-      "tag": "Website"
+      "tag": "Website",
+      "skills": [
+        {
+          "title": "React",
+          "icon": "vscode-icons:file-type-reactjs"
+        },
+        {
+          "title": "Tailwindcss",
+          "icon": "vscode-icons:file-type-tailwind"
+        },
+        {
+          "title": "JavaScript",
+          "icon": "vscode-icons:file-type-js"
+        },
+        {
+          "title": "TypeScript",
+          "icon": "vscode-icons:file-type-typescript-official"
+        },
+        {
+          "title": "CSS",
+          "icon": "vscode-icons:file-type-css"
+        },
+        {
+          "title": "HTML",
+          "icon": "vscode-icons:file-type-html"
+        },
+        {
+          "title": "Git",
+          "icon": "vscode-icons:file-type-git"
+        }
+      ]
+    },
+    {
+      "title": "Game Development",
+      "date": "2010",
+      "description": "Fundamentals of Game Development",
+      "content": [
+        "Since the age of 9, I've been immersed in the world of video game development, using it as a creative outlet to bring my artwork to life and craft experiences I would enjoy. This journey sparked my love for software development. Over the past 13 years, primarily working with Unity, I've honed my skills in perseverance, mastering a development lifecycle that suits me, and overcoming obstacles.",
+        "As I've grown, my focus has shifted from building new games to testing and optimizing older projects. This evolution has deepened my understanding of software performance and refinement, making game development not just a hobby, but a passion that continues to drive my career forward."
+      ],
+      "skills": [
+        {
+          "title": "C#",
+          "icon": "vscode-icons:file-type-csharp2"
+        },
+        {
+          "title": "Unity",
+          "icon": "mdi:unity"
+        }
+      ]
     }
   ],
   "skills":

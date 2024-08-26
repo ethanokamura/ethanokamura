@@ -43,12 +43,13 @@ import { projects, skills } from '../utils/data.json';
     </div>
   </div>
   <div class="text-center">
-    <h1>I build cool software to make my life easier.</h1>
+    <h1>I build software to make my life easier.</h1>
     <h2>Here are some of the tools I like to use:</h2>
   </div>
+
   <div class="flex flex-wrap justify-center gap-4">
     {skills.map((skill: any) =>
-    <div class="hidden-section drop-shadow-black flex gap-2 items-center p-2 rounded-lg bg-gradient-to-br from-secondary to-background border-4 border-secondary">
+    <div class="hidden-section drop-shadow-black flex gap-2 items-center px-2 py-1 rounded-lg bg-gradient-to-br from-background to-darkbackground border-2 border-secondary">
       <div class="w-6">
         <Icon name={skill.icon}/>
       </div>
@@ -57,13 +58,13 @@ import { projects, skills } from '../utils/data.json';
     )}
   </div>
 
-  <div class="flex flex-wrap gap-10 justify-center">
-    <Window extras='w-96 bg-secondary hidden-section' header='Education'>
+  <div class="flex flex-wrap w-full gap-10 justify-center">
+    <Window width='w-96 hidden-section' header='Education'>
       <h1>Cabrillo College</h1>
       <span>2021-2024</span>
       <p>Transfered For Computer Science</p>
     </Window>
-    <Window extras='w-96 bg-secondary hidden-section' header='Education'>
+    <Window width='w-96 hidden-section' header='Education'>
       <h1>UC Santa Cruz</h1>
       <span>2024-2026</span>
       <p>BS in Computer Science</p>
@@ -71,7 +72,7 @@ import { projects, skills } from '../utils/data.json';
   </div>
 
   {projects.map((project: any) =>
-    <Window extras='bg-secondary hidden-section' header="Project">
+    <Window width='w-full hidden-section' header="Project">
       <h1>{project.title}</h1>
       { project.link ? <a target="_blank" href={project.link} class="text-primary drop-shadow-glow">perfectline.io</a> : <></>}
       <p class="text-sm text-text3">{project.description} ({project.date})</p>
@@ -81,7 +82,7 @@ import { projects, skills } from '../utils/data.json';
       )}
       <div class="flex flex-wrap justify-start gap-4">
         {project.skills.map((skill: any) =>
-          <div class="bg-accent rounded flex gap-2 items-center px-2 py-1">
+          <div class="flex gap-2 items-center px-2 py-1 rounded-lg border-2 border-accent">
             <div class="w-6">
               <Icon name={skill.icon}/>
             </div>
@@ -91,5 +92,4 @@ import { projects, skills } from '../utils/data.json';
       </div>
     </Window>
   )}
-  
 </Layout>

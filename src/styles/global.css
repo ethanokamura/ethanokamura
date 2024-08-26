@@ -1,27 +1,6 @@
-@import '@fontsource/manrope';
-@import '@fontsource/jetbrains-mono';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "brains";
-  font-weight: 300;
-  src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
-}
-@font-face {
-  font-family: "rubik";
-  font-weight: 300;
-  src: url('/fonts/Rubik-Regular.ttf');
-  font-display: swap;
-}
-@font-face {
-  font-family: "rubik";
-  font-weight: 800;
-  src: url('/fonts/Rubik-Bold.ttf');
-  font-display: swap;
-}
 
 @layer base {
   html::-webkit-scrollbar {
@@ -30,15 +9,11 @@
   html {
     @apply p-0 m-0 text-text bg-background font-rubik text-lg;
   }
-  html,
-  body {
-    @apply h-full w-screen p-0 m-0;
-  }
   h1 {
-    @apply text-3xl md:text-5xl;
+    @apply text-xl md:text-2xl;
   }
   h2 {
-    @apply text-xl md:text-2xl;
+    @apply text-lg md:text-xl text-text2;
   }
   h1,
   h2,
@@ -46,25 +21,13 @@
   b,
   a,
   strong {
-    @apply font-bold;
-  }
-  h1, b {
-    @apply text-primary drop-shadow-glow;
+    @apply font-semibold;
   }
   p {
     @apply text-text2 text-lg
   }
   span {
     @apply text-text3 text-sm;
-  }
-  article {
-    @apply flex flex-col items-start w-fit text-start;
-  }
-  main {
-    @apply grid gap-16 max-w-2xl py-20 pt-0 px-4;
-  }
-  main section {
-    @apply flex flex-col gap-4;
   }
 }
 

@@ -132,24 +132,16 @@
       "icon": "vscode-icons:file-type-cpp3"
     },
     {
-      "title": "C#",
-      "icon": "vscode-icons:file-type-csharp2"
-    },
-    {
       "title": "Unity",
       "icon": "mdi:unity"
     },
     {
-      "title": "Photoshop",
-      "icon": "vscode-icons:file-type-photoshop"
+      "title": "Flutter",
+      "icon": "vscode-icons:file-type-flutter"
     },
     {
-      "title": "JavaScript",
-      "icon": "vscode-icons:file-type-js"
-    },
-    {
-      "title": "TypeScript",
-      "icon": "vscode-icons:file-type-typescript-official"
+      "title": "Firebase",
+      "icon": "vscode-icons:file-type-firebase"
     },
     {
       "title": "Astro",
@@ -160,21 +152,9 @@
       "icon": "vscode-icons:file-type-svelte"
     },
     {
-      "title": "CSS",
-      "icon": "vscode-icons:file-type-css"
-    },
-    {
       "title": "Tailwindcss",
       "description": "description",
       "icon": "vscode-icons:file-type-tailwind"
-    },
-    {
-      "title": "HTML",
-      "icon": "vscode-icons:file-type-html"
-    },
-    {
-      "title": "Firebase",
-      "icon": "vscode-icons:file-type-firebase"
     },
     {
       "title": "Git",
@@ -187,10 +167,6 @@
     {
       "title": "Bash",
       "icon": "codicon:terminal-bash"
-    },
-    {
-      "title": "Flutter",
-      "icon": "vscode-icons:file-type-flutter"
     }
   ],
   "jobs": [

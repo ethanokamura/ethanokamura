@@ -1,36 +1,13 @@
 {
   "projects" : [
     {
-      "title": "PerfectLine Linux Server",
+      "title": "PerfectLine",
       "date": "2024",
       "description": "Online Courses and Remote Lessons",
       "content": [
+        "Rebuilding CodeSantaCruz has streamlined my teaching, allowing me to manage my time more effectively. The updated site helps students follow along during lessons and continue their work independently, pushing their creative limits.",
+        "This project was both practical and enjoyable, incorporating everything I love about web and game development, C++, and teaching. I chose Astro for its speed in serving static content and TailwindCSS for a modern frontend design.",
         "To further assist my teaching environment, I created a linux shell server to allow studnets to create, write, and excetute their own files via an online server. This allowed them to put all the files we created in the lessons in one central place."
-      ],
-      "tag": "community",
-      "skills": [
-        {
-          "title": "Linux",
-          "icon": "flat-color-icons:linux"
-        },
-        {
-          "title": "Bash",
-          "icon": "codicon:terminal-bash"
-        },
-        {
-          "title": "C++",
-          "icon": "vscode-icons:file-type-cpp3"
-        }
-      ]
-    },
-
-    {
-      "title": "PerfectLine (CodeSantaCruz Rework)",
-      "date": "2024",
-      "description": "Online Courses and Remote Lessons",
-      "content": [
-        "After gaining more experience, I decided it was time to evolve CodeSantaCruz. The new version reworks both my previous website and teaching methods, offering remote software development instruction with a digital curriculum, including documentation and video lessons. The updated site helps students follow along during lessons and continue their work independently, pushing their creative limits.",
-        "Rebuilding CodeSantaCruz has streamlined my teaching, allowing me to manage my time more effectively as a full-time student, developer, and community member. This project was both practical and enjoyable, incorporating everything I love about web and game development, C++, and teaching. I chose Astro for its speed in serving static content and TailwindCSS for a modern frontend design."
       ],
       "link": "https://perfectline.io/",
       "tag": "Website",
@@ -45,11 +22,27 @@
         },
         {
           "title": "TypeScript",
-          "icon": "vscode-icons:file-type-typescript-official"
+          "icon": "vscode-icons:file-type-typescript"
+        },
+        {
+          "title": "TypeScript",
+          "icon": "vscode-icons:file-type-js"
         },
         {
           "title": "Git",
           "icon": "vscode-icons:file-type-git"
+        },
+        {
+          "title": "Linux",
+          "icon": "flat-color-icons:linux"
+        },
+        {
+          "title": "Bash",
+          "icon": "codicon:terminal-bash"
+        },
+        {
+          "title": "C++",
+          "icon": "vscode-icons:file-type-cpp3"
         }
       ]
     },
@@ -60,7 +53,6 @@
       "content": [
         "CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person. The website was a great stepping stone for a first live webpage and I gained lots of experience with web development. It is here that I also learned the downsides and hassle of over-engineering."
       ],
-      "link": "https://perfectline.io/",
       "tag": "Website",
       "skills": [
         {

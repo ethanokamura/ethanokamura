@@ -16,9 +16,6 @@ export default {
         'secondary': '#151b24',
       },
       dropShadow: {
-        black: [
-          "0px 0px 10px #0b0d0f"
-        ],
         glow: [
           "0px 0px 7px #2f80b5"
         ],

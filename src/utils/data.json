@@ -1,6 +1,33 @@
 {
   "projects" : [
     {
+      "title": "SurfBoard",
+      "date": "2024",
+      "description": "Mobile App",
+      "content": [
+        "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new. Have trouble choosing? SurfBoard will pick activities at random so you dont have to! Connect with friends and make collaborative boards!",
+        "Surfboard was my first look into mobile app development. I chose to use flutter because of its cross compatable codebase. This was a summer project with the goal of solving a problem I encountered when it came to going outside... I never knew what to do.",
+        "Surfboard allowed me to keep all my favorite activities and future ideas in one place. It allowed me to share and create collabortive to-do lists for me and my friends."
+      ],
+      "linktitle": "Repository Link",
+      "link": "https://github.com/ethanokamura/surfboard",
+      "tag": "App",
+      "skills": [
+        {
+          "title": "Flutter",
+          "icon": "vscode-icons:file-type-flutter"
+        },
+        {
+          "title": "Bloc",
+          "icon": "file-icons:cubit"
+        },
+        {
+          "title": "Firebase",
+          "icon": "vscode-icons:file-type-firebase"
+        }
+      ]
+    },
+    {
       "title": "PerfectLine",
       "date": "2024",
       "description": "Online Courses and Remote Lessons",
@@ -9,6 +36,7 @@
         "This project was both practical and enjoyable, incorporating everything I love about web and game development, C++, and teaching. I chose Astro for its speed in serving static content and TailwindCSS for a modern frontend design.",
         "To further assist my teaching environment, I created a linux shell server to allow studnets to create, write, and excetute their own files via an online server. This allowed them to put all the files we created in the lessons in one central place."
       ],
+      "linktitle": "perfectline.io",
       "link": "https://perfectline.io/",
       "tag": "Website",
       "skills": [
@@ -21,28 +49,12 @@
           "icon": "vscode-icons:file-type-tailwind"
         },
         {
-          "title": "TypeScript",
-          "icon": "vscode-icons:file-type-typescript"
-        },
-        {
-          "title": "TypeScript",
-          "icon": "vscode-icons:file-type-js"
-        },
-        {
           "title": "Git",
           "icon": "vscode-icons:file-type-git"
         },
         {
           "title": "Linux",
           "icon": "flat-color-icons:linux"
-        },
-        {
-          "title": "Bash",
-          "icon": "codicon:terminal-bash"
-        },
-        {
-          "title": "C++",
-          "icon": "vscode-icons:file-type-cpp3"
         }
       ]
     },
@@ -53,6 +65,8 @@
       "content": [
         "CodeSantaCruz was my first large-scale, practical project where I offered a software development teaching service both remotely and in person. The website was a great stepping stone for a first live webpage and I gained lots of experience with web development. It is here that I also learned the downsides and hassle of over-engineering."
       ],
+      "linktitle": "Repository Link",
+      "link": "https://github.com/ethanokamura/CodeSantaCruz",
       "tag": "Website",
       "skills": [
         {
@@ -62,10 +76,6 @@
         {
           "title": "Tailwindcss",
           "icon": "vscode-icons:file-type-tailwind"
-        },
-        {
-          "title": "JavaScript",
-          "icon": "vscode-icons:file-type-js"
         },
         {
           "title": "Git",
@@ -83,12 +93,12 @@
       ],
       "skills": [
         {
-          "title": "C#",
-          "icon": "vscode-icons:file-type-csharp2"
-        },
-        {
           "title": "Unity",
           "icon": "mdi:unity"
+        },
+        {
+          "title": "Firebase",
+          "icon": "vscode-icons:file-type-firebase"
         }
       ]
     }
@@ -97,44 +107,53 @@
   [
     {
       "title": "C++",
-      "icon": "vscode-icons:file-type-cpp3"
+      "icon": "vscode-icons:file-type-cpp3",
+      "level": 9
     },
     {
-      "title": "Unity",
-      "icon": "mdi:unity"
+      "title": "C#",
+      "icon": "vscode-icons:file-type-csharp2",
+      "level": 6
     },
     {
-      "title": "Flutter",
-      "icon": "vscode-icons:file-type-flutter"
+      "title": "C",
+      "icon": "vscode-icons:file-type-c3",
+      "level": 5
     },
     {
-      "title": "Firebase",
-      "icon": "vscode-icons:file-type-firebase"
+      "title": "Python",
+      "icon": "vscode-icons:file-type-python",
+      "level": 3
     },
     {
-      "title": "Astro",
-      "icon": "vscode-icons:file-type-astro"
+      "title": "Dart",
+      "icon": "vscode-icons:file-type-dartlang",
+      "level": 7
     },
     {
-      "title": "SvelteKit",
-      "icon": "vscode-icons:file-type-svelte"
+      "title": "JavaScript",
+      "icon": "vscode-icons:file-type-js",
+      "level": 4
     },
     {
-      "title": "Tailwindcss",
-      "description": "description",
-      "icon": "vscode-icons:file-type-tailwind"
+      "title": "TypeScript",
+      "icon": "vscode-icons:file-type-typescript",
+      "level": 4
     },
     {
-      "title": "Git",
-      "icon": "vscode-icons:file-type-git"
+      "title": "HTML",
+      "icon": "vscode-icons:file-type-html",
+      "level": 10
     },
     {
-      "title": "Linux",
-      "icon": "flat-color-icons:linux"
+      "title": "CSS",
+      "icon": "vscode-icons:file-type-css",
+      "level": 10
     },
     {
       "title": "Bash",
-      "icon": "codicon:terminal-bash"
+      "icon": "codicon:terminal-bash",
+      "level": 8
     }
   ],
   "jobs": [

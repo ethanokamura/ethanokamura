@@ -5,7 +5,7 @@
 @layer base {
   html::-webkit-scrollbar { display: none; }
   html {
-    @apply p-0 m-0 text-text bg-gradient-to-r from-darkbackground to-background font-rubik;
+    @apply p-0 m-0 text-text bg-background font-rubik;
   }
   body {
     @apply p-0 m-0 w-screen h-full;

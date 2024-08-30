@@ -19,6 +19,9 @@ export default {
         glow: [
           "0px 0px 7px #2f80b5"
         ],
+        black: [
+          "0px 0px 10px #000000"
+        ],
       },
       fontFamily: {
         rubik: 'rubik',

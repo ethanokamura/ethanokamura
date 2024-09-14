@@ -1,16 +1,16 @@
 {
   "projects" : [
     {
-      "title": "SurfBoard",
+      "title": "SurfBored",
       "date": "2024",
       "description": "Mobile App",
       "content": [
-        "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new. Have trouble choosing? SurfBoard will pick activities at random so you dont have to! Connect with friends and make collaborative boards!",
-        "Surfboard was my first look into mobile app development. I chose to use flutter because of its cross compatable codebase. This was a summer project with the goal of solving a problem I encountered when it came to going outside... I never knew what to do.",
-        "Surfboard allowed me to keep all my favorite activities and future ideas in one place. It allowed me to share and create collabortive to-do lists for me and my friends."
+        "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new.",
+        "Have trouble choosing? SurfBored's shuffle feature will pick activities at random so you dont have to.",
+        "Search for tags to find new activites you'll love!"
       ],
       "linktitle": "Repository Link",
-      "link": "https://github.com/ethanokamura/surfboard",
+      "link": "https://www.surfbored.app",
       "tag": "App",
       "skills": [
         {
@@ -24,6 +24,10 @@
         {
           "title": "Firebase",
           "icon": "vscode-icons:file-type-firebase"
+        },
+        {
+          "title": "Algolia",
+          "icon": "la:algolia"
         }
       ]
     },

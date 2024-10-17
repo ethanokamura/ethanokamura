@@ -1,29 +1,45 @@
 {
   "projects" : [
     {
-      "title": "SurfBoard",
+      "title": "SurfBored",
       "date": "2024",
       "description": "Mobile App",
       "content": [
-        "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new. Have trouble choosing? SurfBoard will pick activities at random so you dont have to! Connect with friends and make collaborative boards!",
-        "Surfboard was my first look into mobile app development. I chose to use flutter because of its cross compatable codebase. This was a summer project with the goal of solving a problem I encountered when it came to going outside... I never knew what to do.",
-        "Surfboard allowed me to keep all my favorite activities and future ideas in one place. It allowed me to share and create collabortive to-do lists for me and my friends."
+        "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new. Have trouble choosing? SurfBored will pick activities at random so you dont have to! Connect with friends and make collaborative boards!",
+        "SurfBored was my first look into mobile app development. I chose to use flutter because of its cross compatable codebase. This was a summer project with the goal of solving a problem I encountered when it came to going outside... I never knew what to do.",
+        "SurfBored allowed me to keep all my favorite activities and future ideas in one place. It allowed me to share and create collabortive to-do lists for me and my friends."
       ],
       "linktitle": "Repository Link",
-      "link": "https://github.com/ethanokamura/surfboard",
+      "link": "https://github.com/ethanokamura/SurfBored",
       "tag": "App",
       "skills": [
         {
           "title": "Flutter",
-          "icon": "vscode-icons:file-type-flutter"
+          "icon": "devicon:flutter"
         },
         {
           "title": "Bloc",
-          "icon": "file-icons:cubit"
+          "icon": "vscode-icons:folder-type-cubit"
         },
         {
-          "title": "Firebase",
-          "icon": "vscode-icons:file-type-firebase"
+          "title": "Supabase",
+          "icon": "devicon:supabase"
+        },
+        {
+          "title": "Twilio",
+          "icon": "logos:twilio-icon"
+        },
+        {
+          "title": "Deno",
+          "icon": "vscode-icons:file-type-deno"
+        },
+        {
+          "title": "Postgres",
+          "icon": "devicon:postgresql"
+        },
+        {
+          "title": "SQLite",
+          "icon": "devicon:sqlite"
         }
       ]
     },
@@ -54,7 +70,7 @@
         },
         {
           "title": "Linux",
-          "icon": "flat-color-icons:linux"
+          "icon": "devicon:linux"
         }
       ]
     },
@@ -94,7 +110,7 @@
       "skills": [
         {
           "title": "Unity",
-          "icon": "mdi:unity"
+          "icon": "devicon:unity"
         },
         {
           "title": "Firebase",
@@ -152,66 +168,8 @@
     },
     {
       "title": "Bash",
-      "icon": "codicon:terminal-bash",
+      "icon": "devicon:bash",
       "level": 8
-    }
-  ],
-  "jobs": [
-    {
-      "title": "PerfectLine",
-      "icon": "ph:code-bold",
-      "position": "Teacher and Founder",
-      "date": "Current",
-      "desc": "Offered an efficient remote software development teaching service that includes digital curriculum accessible by current students. The site held both documentation and video lessons. Gained experience in full-stack web development, working with digital media, and handling content heavy pages, all while solidifying my knowledge on computer science topics."
-    },
-    {
-      "title": "CodeSantaCruz",
-      "icon": "ph:code-bold",
-      "position": "Teacher and Founder",
-      "date": "2022-2024",
-      "desc": "Offered both a remote and in-person software development teaching service. Gained experience in working with others, managing a schedule, and static web development, all while solidifying my knowledge on computer science topics."
-    },
-    {
-      "title": "The Coder School",
-      "icon": "ph:code-bold",
-      "position": "Teacher",
-      "date": "2022",
-      "desc": "Worked with over 50 students teaching various languages and concepts ranging from game development, general computer science topics, and web design. Gained experience managing a group of people and working on a team to create an efficient, easily understood, in-depth curriculum."
-    },
-    {
-      "title": "New Leaf Community Market",
-      "icon": "ic:outline-local-grocery-store",
-      "position": "Sales Associate",
-      "date": "2021",
-      "desc": "Worked efficiently with a team and provided excellent customer service as a cashier in a high-end grocery store environment, demonstrating strong attention to detail and accuracy in handling financial transactions."
-    },
-    {
-      "title": "Back Nine Bar and Grill",
-      "icon": "mdi:food-outline",
-      "position": "Server",
-      "date": "2021",
-      "desc": "Delivered a professional dining experience to local patrons. Gained experience working in a fine-dining establishment, delivering exceptional customer experiences through polished communication, working overtime, attention to detail, and management of time and stress in a fast-paced environment. Demonstrated proficiency in managing multiple tables and large business meetings while ensuring a seamless dining experience for patrons."
-    },
-    {
-      "title": "Woodstocks Pizza",
-      "icon": "uil:food",
-      "position": "Delivery Driver / Kitchen Assistance",
-      "date": "2020",
-      "desc": "Served as a diligent busser and delivery driver for a pizza establishment, contributing to the seamless flow of restaurant operations and ensuring timely and accurate deliveries. Maintained a focus on customer satisfaction through efficient service and attention to detail."
-    },
-    {
-      "title": "Cinelux Theaters",
-      "icon": "tabler:movie",
-      "position": "Floor Staff",
-      "date": "2017-2020",
-      "desc": "Experienced a diverse range of responsibilities during a three-year tenure at a movie theater, encompassing roles in concessions, café operations, and general maintenance. Consistently upheld high standards of customer service, operational efficiency, and facility upkeep in a dynamic entertainment environment. We aimed to create a professional, organized, and relaxing environment for our patrons."
-    },
-    {
-      "title": "Lucky Bee Press",
-      "icon": "clarity:design-line",
-      "position": "Associate",
-      "date": "2013-2020",
-      "desc": "Assisted in stocking inventory, monitoring quality control, and gained experience working for a small business. This was my first look at owning and managing your own business, which proved to be extremely beneficial."
     }
   ]
 }

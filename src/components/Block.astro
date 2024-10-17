@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string,
+}
+
+const { title } = Astro.props;
+---
+
+<section class="h-full flex flex-col py-20 items-center gap-10"> 
+  <h1 class="text-center" set:text={title}/>
+  <slot/>
+</section>

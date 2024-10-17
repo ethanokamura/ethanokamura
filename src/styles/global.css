@@ -16,8 +16,5 @@
   h2 { @apply text-3xl md:text-4xl; }
   span { @apply text-text3 text-sm md:text-base; }
   p { @apply text-text2 text-lg md:text-xl; }
-  
-  section {
-    @apply h-full flex flex-col py-20 items-center gap-10;
-  }
+
 }

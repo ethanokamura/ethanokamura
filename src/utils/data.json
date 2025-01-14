@@ -1,8 +1,46 @@
 {
   "projects" : [
     {
+      "title": "Habit Rabbit",
+      "date": "2024-Present",
+      "description": "Mobile App",
+      "content": [
+
+        "Habit Rabbit is your daily companion for habit tracking and achieving your goals!",
+        "This Flutter-powered app is designed to help you build healthy habits, track your progress month-to-month, and stay motivated with the help of your cheerful rabbit friend.",
+        "With this app, I created seamless interaction between local and cloud databases with syncing algorithms to allow for an offline first application.",
+        "I worked with custom data types ensuring consistency when interacting with multiple databases.",
+        "Habit Rabbit allowed me to experience the full development life-cycle from planning to deployment via the IOS App Store and the Google Play Store."
+      ],
+      "linktitle": "Git Repository",
+      "link": "https://github.com/ethanokamura/habit-rabbit",
+      "tag": "App",
+      "skills": [
+        {
+          "title": "Flutter",
+          "icon": "devicon:flutter"
+        },
+        {
+          "title": "Cubit",
+          "icon": "vscode-icons:folder-type-cubit"
+        },
+        {
+          "title": "Supabase",
+          "icon": "devicon:supabase"
+        },
+        {
+          "title": "Twilio",
+          "icon": "logos:twilio-icon"
+        },
+        {
+          "title": "Postgres",
+          "icon": "devicon:postgresql"
+        }
+      ]
+    },
+    {
       "title": "SurfBored",
-      "date": "2024",
+      "date": "2024-Present",
       "description": "Mobile App",
       "content": [
         "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new.",
@@ -43,7 +81,7 @@
     },
     {
       "title": "PerfectLine",
-      "date": "2024",
+      "date": "2022-2024",
       "description": "Online Courses and Remote Lessons",
       "content": [
         "Rebuilding CodeSantaCruz has streamlined my teaching, allowing me to manage my time more effectively. The updated site helps students follow along during lessons and continue their work independently, pushing their creative limits.",
@@ -99,7 +137,7 @@
     },
     {
       "title": "Game Development",
-      "date": "2010",
+      "date": "2010-2022",
       "description": "Fundamentals of Game Development",
       "content": [
         "Since the age of 9, I've been immersed in the world of video game development, using it as a creative outlet to bring my artwork to life and craft experiences I would enjoy. This journey sparked my love for software development. Over the past 13 years, primarily working with Unity, I've honed my skills in perseverance, mastering a development lifecycle that suits me, and overcoming obstacles.",

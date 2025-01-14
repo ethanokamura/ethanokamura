@@ -18,7 +18,7 @@
           "icon": "devicon:flutter"
         },
         {
-          "title": "Bloc",
+          "title": "Cubit",
           "icon": "vscode-icons:folder-type-cubit"
         },
         {
@@ -36,10 +36,6 @@
         {
           "title": "Postgres",
           "icon": "devicon:postgresql"
-        },
-        {
-          "title": "SQLite",
-          "icon": "devicon:sqlite"
         }
       ]
     },
@@ -170,6 +166,10 @@
       "title": "Bash",
       "icon": "devicon:bash",
       "level": 8
+    },
+    {
+      "title": "Postgres",
+      "icon": "devicon:postgresql"
     }
   ]
 }

@@ -9,14 +9,17 @@ import { projects, skills } from '@utils/data.json';
 ---
 <Layout>
   <section class="h-screen justify-center items-start flex flex-col py-20 gap-10">
-    <div>
-      <h1 class="text-5xl md:text-[13rem]">Ethan Okamura</h1>
-      <div class="flex gap-1 items-center">
-        <p class="text-sm md:text-6xl text-text2 max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit">I build software to make my life easier.</p>
-        <div class="animate-blink bg-text2 h-4 w-1 md:h-12 md:w-4"></div>
+    <div class="mx-auto text-center">
+      <div>
+        <h1 class="text-7xl md:text-9xl lg:text-[13rem]">Ethan</h1>
+        <h1 class="text-7xl md:text-9xl lg:text-[13rem]">Okamura</h1>
       </div>
+      <div class="flex gap-1 items-center">
+        <p class="text-md md:text-3xl lg:text-6xl text-text2 max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit">I build software to make my life easier.</p>
+        <div class="animate-blink bg-text2 h-4 w-1 md:h-8 lg:h-12 md:w-2 lg:w-4"></div>
+      </div>
+      <Icons/>
     </div>
-    <Icons/>
   </section>
   <Block title='Tools I use:'>
     <div class="flex flex-wrap justify-center gap-4 max-w-2xl">
@@ -30,14 +33,14 @@ import { projects, skills } from '@utils/data.json';
   <Block title='My Education:'>
     <div class="grid gap-10">
       <div>
-        <h2>Cabrillo College</h2>
-        <span>2021-2024</span>
-        <p>Transfered For Computer Science</p>
-      </div>
-      <div>
-        <h2>University of California Santa Cruz</h2>
+        <h2>University of California, Santa Cruz</h2>
         <span>2024-2026</span>
         <p>BS in Computer Science</p>
+      </div>
+      <div>
+        <h2>Cabrillo College</h2>
+        <span>2021-2024</span>
+        <p>Studied Mathematics and Computer Science</p>
       </div>
     </div>
   </Block>

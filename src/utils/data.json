@@ -5,7 +5,6 @@
       "date": "2024-Present",
       "description": "Mobile App",
       "content": [
-
         "Habit Rabbit is your daily companion for habit tracking and achieving your goals!",
         "This Flutter-powered app is designed to help you build healthy habits, track your progress month-to-month, and stay motivated with the help of your cheerful rabbit friend.",
         "With this app, I created seamless interaction between local and cloud databases with syncing algorithms to allow for an offline first application.",
@@ -201,11 +200,6 @@
       "title": "CSS",
       "icon": "vscode-icons:file-type-css",
       "level": 10
-    },
-    {
-      "title": "Bash",
-      "icon": "devicon:bash",
-      "level": 8
     },
     {
       "title": "Postgres",

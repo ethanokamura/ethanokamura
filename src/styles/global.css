@@ -19,7 +19,7 @@
   p, li { @apply text-text2 text-lg md:text-xl; }
   b  { @apply text-primary; }
   article {
-    @apply h-full max-w-4xl mx-auto grid gap-4 pt-20 pb-40 items-center;
+    @apply h-full max-w-4xl mx-auto grid gap-4 pt-10 pb-20 items-center;
   }
   hr {
     @apply h-[2px] rounded-lg my-4 bg-accent border-0

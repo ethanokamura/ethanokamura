@@ -1,7 +1,11 @@
 ---
 import '../styles/global.css';
 import Card from '@components/Card.astro';
+import Tag from '@components/Tag.astro';
 import Layout from '@layouts/Layout.astro';
+
+import { frontend } from '@utils/data.json';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout  title="🌐 Frontend Services" description="Need a webpage?">
@@ -31,7 +35,29 @@ import Layout from '@layouts/Layout.astro';
           <li>A <b>README file</b> with instructions so you can update your site on your own</li>
         </ul>
       </div>
+      <div>
+        <h3>📂 What I Guarantee:</h2>
+        <ul>
+          <li>A sleek and modern UI</li>
+          <li>High quality code</li>
+          <li>SEO optimized web pages</li>
+          <li>Fast reponse times</li>
+        </ul>
+      </div>
     </div>
+
+    <div>
+      <h2>Stack:</h2>
+      <div class="flex flex-wrap my-4 justify-start gap-4">
+        {frontend.stack.map((skill: any) =>
+          <Tag>
+            <Icon name={skill.icon} size={24}/>
+            <p class="pr-2 text-xl font-semibold">{skill.title}</p>
+          </Tag>
+        )}
+      </div>
+    </div>
+
     <div class="flex flex-col gap-4">
       <h2>Pricing:</h2>
       <Card>

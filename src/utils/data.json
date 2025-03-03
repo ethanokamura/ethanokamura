@@ -205,5 +205,25 @@
       "title": "Postgres",
       "icon": "devicon:postgresql"
     }
-  ]
+  ],
+  "frontend": {
+    "stack": [
+      {
+        "title": "Astro",
+        "icon": "vscode-icons:file-type-astro"
+      },
+      {
+        "title": "Tailwindcss",
+        "icon": "vscode-icons:file-type-tailwind"
+      },
+      {
+        "title": "Git",
+        "icon": "vscode-icons:file-type-git"
+      },
+      {
+        "title": "Cloudflare",
+        "icon": "devicon:cloudflare"
+      }
+    ]
+  }
 }

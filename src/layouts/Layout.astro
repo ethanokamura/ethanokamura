@@ -1,11 +1,11 @@
 ---
 import Head from '../components/Head.astro';
-import Footer from '../components/Footer.astro';
 import '/src/styles/global.css';
+const { title, description } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
-  <Head title='Ethan Okamura' description='A portfolio site'/>
+  <Head title={title} description={description}/>
 	<body class="px-5 md:px-10">
     <slot/>
 	</body>

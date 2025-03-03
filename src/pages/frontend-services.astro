@@ -44,11 +44,9 @@ import { Icon } from 'astro-icon/components';
           <li>Fast reponse times</li>
         </ul>
       </div>
-    </div>
-
-    <div>
+      <hr/>
       <h2>Stack:</h2>
-      <div class="flex flex-wrap my-4 justify-start gap-4">
+      <div class="flex flex-wrap justify-start gap-4">
         {frontend.stack.map((skill: any) =>
           <Tag>
             <Icon name={skill.icon} size={24}/>
@@ -56,9 +54,7 @@ import { Icon } from 'astro-icon/components';
           </Tag>
         )}
       </div>
-    </div>
-
-    <div class="flex flex-col gap-4">
+      <hr/>
       <h2>Pricing:</h2>
       <Card>
         <div class="flex flex-col gap-2">

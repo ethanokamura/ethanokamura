@@ -1,0 +1,83 @@
+---
+import '../styles/global.css';
+import Card from '@components/Card.astro';
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout  title="🌐 Frontend Services" description="Need a webpage?">
+  <article>
+    <div>
+      <h2 class="capitalize">🌐 Frontend Services</h2>
+      <h3 class="font-[500] text-xl md:text-2xl text-text2">More Information on My Frontend Services</h2>
+    </div>
+    <hr/>
+    <div class="flex flex-col gap-4">
+      <h2>The Service:</h2>
+      <p>I'm looking to gain experience in frontend design, so this is a great opportunity for both of us—you get a custom site, and I get hands-on practice.</p>
+      <div>
+        <h3>🔄 Revision Policy</h3>
+        <p>To keep things efficient, the number of revisions depends on the package you choose. This does <i>not</i> include the <b>initial design mockup</b>, where you can tell me everything you want. Once I build and show you the site, you'll have a limited number of revision rounds.</p>
+      </div>
+      <div>
+        <h3>⏳ Turnaround Time:</h3>
+        <p>I'll only take on projects I can manage at once, so I'll let you know the estimated completion time before starting.</p>
+      </div>
+      <p>If you're interested in <b>showcasing your projects, personal branding, or even a blog</b>, I'd be happy to set that up! </p>
+      <p>📌 Note: By default, the site will have <b>one theme of your choice</b> (color scheme, fonts, etc.).</p>
+      <div>
+        <h3>📂 What You'll Get:</h2>
+        <ul>
+          <li>All <b>project files</b></li>
+          <li>A <b>README file</b> with instructions so you can update your site on your own</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h2>Pricing:</h2>
+      <Card>
+        <div class="flex flex-col gap-2">
+          <h2>Single Page</h2>
+          <div class="flex justify-between">
+            <p>✅ With 3 Revisions</p>
+            <p><b>$50</b></p>
+          </div>
+          <div class="flex justify-between">
+            <p>🔄 Per Extra Revision</p>
+            <p>+$10</p>
+          </div>
+          <div class="flex justify-between">
+            <p>🌗 Light Mode / Dark Mode Toggle</p>
+            <p>+$20</p>
+          </div>
+          <div class="flex justify-between">
+            <p>🖥 Hosting & Domain Setup</p>
+            <p>+$20</p>
+          </div>
+        </div>
+      </Card>
+      <Card>
+        <div class="flex flex-col gap-2">
+          <h2>2-3 Pages</h2>
+          <div class="flex justify-between">
+            <p>✅ With 3 Revisions</p>
+            <p><b>$100</b></p>
+          </div>
+          <div class="flex justify-between">
+            <p>🔄 Per Extra Revision</p>
+            <p>+$20</p>
+          </div>
+          <div class="flex justify-between">
+            <p>🌗 Light Mode / Dark Mode Toggle</p>
+            <p>+$20</p>
+          </div>
+          <div class="flex justify-between">
+            <p>🖥 Hosting & Domain Setup</p>
+            <p>+$20</p>
+          </div>
+        </div>
+      </Card>
+      <p>📌 Note: If you are looking for a larger project, contact me to negotiate pricing.</p>
+    </div>
+  </article>
+  
+</Layout>

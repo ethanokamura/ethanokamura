@@ -5,16 +5,78 @@
 @layer base {
   html::-webkit-scrollbar { display: none; }
   html {
-    @apply p-0 m-0 text-text bg-gradient-to-b from-background to-darkbackground font-rubik;
+    @apply p-0 m-0 text-text bg-background font-rubik;
   }
   body {
     @apply p-0 m-0 w-screen h-full;
   }
 
-  h1, h2 { @apply font-bold; }
+  h1, h2, h3 { @apply font-bold; }
   h1 { @apply text-4xl md:text-6xl transition-all ease-linear duration-300; }
   h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-lg md:text-xl; }
   span { @apply text-text3 text-sm md:text-base; }
-  p { @apply text-text2 text-lg md:text-xl; }
+  p, li { @apply text-text2 text-lg md:text-xl; }
+  b  { @apply text-primary; }
+  article {
+    @apply h-full max-w-4xl mx-auto grid gap-4 pt-20 pb-40 items-center;
+  }
+  hr {
+    @apply h-[3px] rounded-lg my-4 bg-accent border-0
+  }
+  ul {
+    @apply list-['>'] pl-5;
+  }
+  :is(ul, ol) li {
+    @apply my-2 px-2;
+  }
+}
 
+@layer components {
+  .prose {
+    @apply w-full;
+  }
+  .prose :is(b, a, strong) {
+    @apply text-primary;
+  }
+  .prose :is(h1, h2, h3, h4, h5, h6) {
+    @apply my-3 capitalize font-bold;
+  }
+  .prose :not(h1, h2, h3, h4, h5, h6) {
+    @apply text-base md:text-lg;
+  }
+  .prose :not(h1, h2, h3, h4, h5, h6, b, a, strong) {
+    @apply text-text2;
+  }
+  .prose p:not(:is(h1, h2, h3, h4, h5, h6) + p) {
+    @apply mt-7
+  }
+  .prose :is(ol) {
+    @apply list-decimal pl-5;
+  }
+  .prose :is(ul) {
+    @apply list-['>'] pl-5;
+  }
+  .prose a {
+    @apply underline;
+  }
+  .prose img {
+    @apply w-4/5 mx-auto;
+  }
+  .prose :is(ul, ol) li {
+    @apply my-2 px-2;
+  }
+  .prose code:not(:is(pre code)) {
+    @apply bg-accent px-2 rounded-md text-text;
+  }
+  .prose pre {
+    @apply mt-3 overflow-x-scroll p-4 rounded-md max-w-full;
+    tab-size: 2;
+  }
+  .prose pre::-webkit-scrollbar {
+    @apply bg-accent;
+  }
+  .prose pre::-webkit-scrollbar-thumb {
+    @apply bg-background;
+  }
 }

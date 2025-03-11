@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+import Layout from './Layout.astro';
+const { title, description, date } = Astro.props;
+---
+<Layout title={title} description={description}>
+  <article>
+    <h1 class="capitalize">{title}</h1>
+    <h2 class="font-[500] text-xl md:text-2xl text-text2 dark:text-darktext2">{description}</h2>
+    <h2 class="font-[500] text-lg md:text-xl text-text3 dark:text-darktext3">{date}</h2>
+    <div class="border-b-2 border-accent dark:border-darkaccent my-4 border-dashed"></div>
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+  </Layout>

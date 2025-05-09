@@ -22,6 +22,7 @@ import { projects, experiences, skills } from '@utils/data.json';
       <Icons/>
     </div>
   </section>
+  <hr class="divider md:hidden"/>
   <Block title='Tools I use:'>
     <div class="flex flex-wrap justify-center gap-4 max-w-2xl">
       {skills.map((skill: any) =>
@@ -32,6 +33,7 @@ import { projects, experiences, skills } from '@utils/data.json';
       )}
     </div>
   </Block>
+  <hr class="divider md:hidden"/>
   <!-- <Block title='My Education:'>
     <div class="grid gap-10">
       <div>
@@ -52,7 +54,6 @@ import { projects, experiences, skills } from '@utils/data.json';
         <div class="grid gap-8">
           <div>
             <h2>{experience.title}</h2>
-            { experience.link ? <a target="_blank" href={experience.link} class="text-primary drop-shadow-glow text-lg">{experience.linktitle}</a><br/> : <></>}
             <span>{experience.description} ({experience.date})</span>
           </div>
           
@@ -64,7 +65,7 @@ import { projects, experiences, skills } from '@utils/data.json';
             {experience.skills.map((skill: any) =>
             <Tag>
               <Icon size={32} name={skill.icon}/>
-              <p class="pr-2 text-lg">{skill.title}</p>
+              <p class="pr-2 text-base md:text-lg">{skill.title}</p>
             </Tag>
             )}
           </div>
@@ -72,30 +73,34 @@ import { projects, experiences, skills } from '@utils/data.json';
       </Card>
     )}
   </Block>
+  <hr class="divider md:hidden"/>
   <Block title='My Projects:'>
     {projects.map((project: any) =>
-      <Card>
-        <div class="grid gap-8">
-          <div>
-            <h2>{project.title}</h2>
-            { project.link ? <a target="_blank" href={project.link} class="text-primary drop-shadow-glow text-lg">{project.linktitle}</a><br/> : <></>}
-            <span>{project.description} ({project.date})</span>
+      <div>
+        <Card>
+          <div class="grid gap-8">
+            <div>
+              <h2>{project.title}</h2>
+              <span>{project.description} ({project.date})</span>
+            </div>
+            
+            <div class="grid gap-4">
+              { project.content.map((paragraph: any) => <p>{paragraph}</p>) }
+            </div>
+    
+            <div class="flex flex-wrap justify-start gap-4">
+              {project.skills.map((skill: any) =>
+              <Tag>
+                <Icon size={32} name={skill.icon}/>
+                <p class="pr-2 text-base md:text-lg">{skill.title}</p>
+              </Tag>
+              )}
+            </div>
           </div>
-          
-          <div class="grid gap-4">
-            { project.content.map((paragraph: any) => <p>{paragraph}</p>) }
-          </div>
-  
-          <div class="flex flex-wrap justify-start gap-4">
-            {project.skills.map((skill: any) =>
-            <Tag>
-              <Icon size={32} name={skill.icon}/>
-              <p class="pr-2 text-lg">{skill.title}</p>
-            </Tag>
-            )}
-          </div>
-        </div>
-      </Card>
+        </Card>
+        <hr class="divider my-10 md:hidden"/>
+      </div>
+
     )}
   </Block>
 </Layout>

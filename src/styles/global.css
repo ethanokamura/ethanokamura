@@ -38,7 +38,6 @@
   .card {
     @apply w-fit bg-background rounded-xl shadow-2xl p-6 backdrop-blur-sm ring-2 ring-background/10;
   }
-
   .card-bg {
     --background: linear-gradient(to left, #8875e0 0%, #61afef 100%);
     padding: 3px;
@@ -61,6 +60,9 @@
     filter: blur(25px);
     background: var(--background);
     transition: opacity .5s;
+  }
+  .divider {
+    @apply h-[2px] rounded-lg my-4 bg-accent border-0
   }
 
   .prose {

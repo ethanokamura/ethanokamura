@@ -1,46 +1,99 @@
 {
-  "projects" : [
+  "experiences" : [
     {
-      "title": "Habit Rabbit",
-      "date": "2024-Present",
-      "description": "Mobile App",
+      "title": "CorkVision",
+      "date": "2025-Present",
+      "description": "Lead Frontend Engineer",
       "content": [
-        "Habit Rabbit is your daily companion for habit tracking and achieving your goals!",
-        "This Flutter-powered app is designed to help you build healthy habits, track your progress month-to-month, and stay motivated with the help of your cheerful rabbit friend.",
-        "With this app, I created seamless interaction between local and cloud databases with syncing algorithms to allow for an offline first application.",
-        "I worked with custom data types ensuring consistency when interacting with multiple databases.",
-        "Habit Rabbit allowed me to experience the full development life-cycle from planning to deployment via the IOS App Store and the Google Play Store."
+        "Spearheaded the front-end development of CorkVision's mobile, web, and desktop application using Flutter.",
+        "Designed and implemented a scalable system architecture to support MVP launch.",
+        "Led UI/UX design efforts, ensuring a seamless and responsive user experience.",
+        "Collaborated in a remote startup environment, attending biweekly meetings and coordinating with cross-functional teams."
       ],
-      "linktitle": "Git Repository",
-      "link": "https://github.com/ethanokamura/habit-rabbit",
+      "linktitle": "corkvision.com",
+      "link": "https://www.corkvision.com/",
       "tag": "App",
       "skills": [
+        {
+          "title": "React",
+          "icon": "devicon:react"
+        },
+        {
+          "title": "Tailwindcss",
+          "icon": "vscode-icons:file-type-tailwind"
+        },
         {
           "title": "Flutter",
           "icon": "devicon:flutter"
         },
         {
-          "title": "Cubit",
-          "icon": "vscode-icons:folder-type-cubit"
+          "title": "Node",
+          "icon": "devicon:nodejs"
         },
         {
-          "title": "Supabase",
-          "icon": "devicon:supabase"
+          "title": "MySQL",
+          "icon": "logos:mysql"
         },
         {
-          "title": "Twilio",
-          "icon": "logos:twilio-icon"
+          "title": "Docker",
+          "icon": "devicon:docker"
         },
         {
-          "title": "Postgres",
-          "icon": "devicon:postgresql"
+          "title": "AWS Suite",
+          "icon": "fa-brands:aws"
+        }
+      ]
+    }
+  ],
+  "projects" : [
+    {
+      "title": "Cosmiq",
+      "date": "2025-Present",
+      "description": "Desktop App",
+      "content": [
+        "Comsiq was a hackathon project for CruzHacks 2025 that has developed into my primary note taking app.",
+        "Cosmiq provides a WYSIWYG markdown editor for writing notes for any subject. It supports markdown, math equations (via latex), and advanced code blocks (via highlightjs)",
+        "What makes this app special, is its ability to instantly summarize content with a click. This is especially important for creating study guides or reviewing notes from a previous session.",
+        "By far the most exciting feature for students, is its ability to create dynamic multiple-choice quizzes based on the material you provide it. I have been using this for my lecture notes at university and it has helped me maintain A's in my classes."
+      ],
+      "linktitle": "Git Repository",
+      "link": "https://github.com/ethanokamura/cosmiq",
+      "tag": "App",
+      "skills": [
+        {
+          "title": "Gemini",
+          "icon": "logos:google-gemini"
+        },
+        {
+          "title": "React",
+          "icon": "devicon:react"
+        },
+        {
+          "title": "Tailwindcss",
+          "icon": "vscode-icons:file-type-tailwind"
+        },
+        {
+          "title": "Tauri",
+          "icon": "devicon:tauri"
+        },
+        {
+          "title": "NodeJS",
+          "icon": "devicon:nodejs"
+        },
+        {
+          "title": "Docker",
+          "icon": "devicon:docker"
+        },
+        {
+          "title": "Google Cloud Run",
+          "icon": "devicon:googlecloud"
         }
       ]
     },
     {
       "title": "SurfBored",
       "date": "2024-Present",
-      "description": "Mobile App",
+      "description": "Desktop, Mobile, and Web App",
       "content": [
         "Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new.",
         "Have trouble choosing? SurfBored's shuffle feature will pick activities at random so you dont have to.",
@@ -53,12 +106,24 @@
       "tag": "App",
       "skills": [
         {
-          "title": "Flutter",
-          "icon": "devicon:flutter"
+          "title": "React",
+          "icon": "devicon:react"
         },
         {
-          "title": "Cubit",
-          "icon": "vscode-icons:folder-type-cubit"
+          "title": "Tailwindcss",
+          "icon": "vscode-icons:file-type-tailwind"
+        },
+        {
+          "title": "Tauri",
+          "icon": "devicon:tauri"
+        },
+        {
+          "title": "NextJS",
+          "icon": "devicon:nextjs"
+        },
+        {
+          "title": "Flutter",
+          "icon": "devicon:flutter"
         },
         {
           "title": "Supabase",

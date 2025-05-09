@@ -3,9 +3,10 @@ import Layout from '@layouts/Layout.astro';
 import Icons from '@components/Icons.astro';
 import Card from '@components/Card.astro';
 import Tag from '@components/Tag.astro';
+import HighlightTag from '@components/HighlightTag.astro';
 import Block from '@components/Block.astro';
 import { Icon } from 'astro-icon/components'
-import { projects, skills } from '@utils/data.json';
+import { projects, experiences, skills } from '@utils/data.json';
 ---
 <Layout title='Ethan Okamura' description='A portfolio site'>
   <section class="h-screen justify-center items-start flex flex-col py-20 gap-10">
@@ -24,13 +25,14 @@ import { projects, skills } from '@utils/data.json';
   <Block title='Tools I use:'>
     <div class="flex flex-wrap justify-center gap-4 max-w-2xl">
       {skills.map((skill: any) =>
-      <Tag>
-        <Icon name={skill.icon} size={48}/>
-        <p class="pr-2 text-xl font-semibold">{skill.title}</p>
-      </Tag>
-    )}
+        <HighlightTag>
+          <Icon name={skill.icon} size={48}/>
+          <p class="pr-2 text-xl">{skill.title}</p>
+        </HighlightTag>
+      )}
+    </div>
   </Block>
-  <Block title='My Education:'>
+  <!-- <Block title='My Education:'>
     <div class="grid gap-10">
       <div>
         <h2>University of California, Santa Cruz</h2>
@@ -43,6 +45,32 @@ import { projects, skills } from '@utils/data.json';
         <p>Studied Mathematics and Computer Science</p>
       </div>
     </div>
+  </Block> -->
+  <Block title='Industry Experience:'>
+    {experiences.map((experience: any) =>
+      <Card>
+        <div class="grid gap-8">
+          <div>
+            <h2>{experience.title}</h2>
+            { experience.link ? <a target="_blank" href={experience.link} class="text-primary drop-shadow-glow text-lg">{experience.linktitle}</a><br/> : <></>}
+            <span>{experience.description} ({experience.date})</span>
+          </div>
+          
+          <div class="grid gap-4">
+            { experience.content.map((paragraph: any) => <p>{paragraph}</p>) }
+          </div>
+  
+          <div class="flex flex-wrap justify-start gap-4">
+            {experience.skills.map((skill: any) =>
+            <Tag>
+              <Icon size={32} name={skill.icon}/>
+              <p class="pr-2 text-lg">{skill.title}</p>
+            </Tag>
+            )}
+          </div>
+        </div>
+      </Card>
+    )}
   </Block>
   <Block title='My Projects:'>
     {projects.map((project: any) =>
@@ -62,7 +90,7 @@ import { projects, skills } from '@utils/data.json';
             {project.skills.map((skill: any) =>
             <Tag>
               <Icon size={32} name={skill.icon}/>
-              <p class="pr-2 text-lg font-semibold">{skill.title}</p>
+              <p class="pr-2 text-lg">{skill.title}</p>
             </Tag>
             )}
           </div>

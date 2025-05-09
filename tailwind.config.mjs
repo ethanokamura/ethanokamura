@@ -10,8 +10,10 @@ export default {
         'text2': '#969eb0',
         'text3': '#666e7d',
         'background': '#10141a',
-        'accent': '#1d2530',
+        'background-2': '#151b24',
+        'accent': '#1c232e',
         'primary': '#61afef',
+        'primary2': '#8875e0',
       },
       dropShadow: {
         glow: [
